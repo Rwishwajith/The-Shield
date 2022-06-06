@@ -187,7 +187,32 @@ class _SideEffectTimelineScreenState
                           Row(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.red,
+                                backgroundColor: Colors.orange,
+                                radius: 8,
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text('Numbness in Hands',
+                                  style:
+                                  TextStyle(color: Colors.white, fontSize: 18)),
+                            ],
+                          ),
+                          Text('10 Days',
+                              style:
+                              TextStyle(color: Colors.white, fontSize: 15)),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.blue,
                                 radius: 8,
                               ),
                               SizedBox(
@@ -198,7 +223,7 @@ class _SideEffectTimelineScreenState
                                   TextStyle(color: Colors.white, fontSize: 18)),
                             ],
                           ),
-                          Text('2 H',
+                          Text('4 Hours',
                               style:
                               TextStyle(color: Colors.white, fontSize: 15)),
                         ],
@@ -218,12 +243,12 @@ class _SideEffectTimelineScreenState
                               SizedBox(
                                 width: 5,
                               ),
-                              Text('Headache',
+                              Text('Fever',
                                   style:
                                   TextStyle(color: Colors.white, fontSize: 18)),
                             ],
                           ),
-                          Text('2 H',
+                          Text('3 Days',
                               style:
                               TextStyle(color: Colors.white, fontSize: 15)),
                         ],
@@ -237,43 +262,18 @@ class _SideEffectTimelineScreenState
                           Row(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.red,
+                                backgroundColor: Colors.pink,
                                 radius: 8,
                               ),
                               SizedBox(
                                 width: 5,
                               ),
-                              Text('Headache',
+                              Text('Joint Pain',
                                   style:
                                   TextStyle(color: Colors.white, fontSize: 18)),
                             ],
                           ),
-                          Text('2 H',
-                              style:
-                              TextStyle(color: Colors.white, fontSize: 15)),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 30,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 8,
-                              ),
-                              SizedBox(
-                                width: 5,
-                              ),
-                              Text('Headache',
-                                  style:
-                                  TextStyle(color: Colors.white, fontSize: 18)),
-                            ],
-                          ),
-                          Text('2 H',
+                          Text('3 Weeks',
                               style:
                               TextStyle(color: Colors.white, fontSize: 15)),
                         ],
