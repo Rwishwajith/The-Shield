@@ -81,7 +81,7 @@ class _CheckPredictionsScreenState extends State<CheckPredictionsScreen> {
                   height: 30,
                 ),
                 Text(
-                  'Future Complication based on your body conditions',
+                  'Based on your body conditions and Side Effects you experienced, We will be predicting the possible future complications to help you get proper medical assistance.',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 SizedBox(
@@ -90,7 +90,7 @@ class _CheckPredictionsScreenState extends State<CheckPredictionsScreen> {
                 Padding(
                   padding: const EdgeInsets.only(left: 20.0),
                   child: Text(
-                    'Future Complication based on your body conditions',
+                    '• Step 1:  Take a look into our predictions and look closer to the sections highlighted in Red.',
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                 ),
@@ -100,7 +100,7 @@ class _CheckPredictionsScreenState extends State<CheckPredictionsScreen> {
                 Padding(
                   padding: const EdgeInsets.only(left: 20.0),
                   child: Text(
-                    'Future Complication based on your body conditions',
+                    ' Step 2: Once you identified the severer issues, contact your family doctor or book a appointment with the nearest doctor through our application.',
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                 ),
@@ -130,7 +130,7 @@ class _CheckPredictionsScreenState extends State<CheckPredictionsScreen> {
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: Text(
-                    'Future Complication based on your body conditions',
+                    'Your data will be safe with us.',
                     style: TextStyle(color: Colors.white, fontSize: 15),
                   ),
                 ),
@@ -208,7 +208,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
 
     List<dynamic> sideEffectListHistory2 = [
       {
-        "title": "Possible chronic joint pain",
+        "title": "Diabates Warnings",
         "sub":
         'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
@@ -218,7 +218,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
         'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
       {
-        "title": "00",
+        "title": "Blood Pressure",
         "sub":
         'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
@@ -486,7 +486,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                             gradient: LinearGradient(
                                 begin: Alignment.topCenter,
                                 end: Alignment.bottomCenter,
-                                colors: [Colors.red, Colors.orange]),
+                                colors: [Colors.orange, Colors.green]),
                             // color: Color(0xff3a2f4b),
                             border: Border.all(color: Colors.transparent),
                             borderRadius:
@@ -565,11 +565,11 @@ class _SecondFutureComplicationScreenState
   const AssetImage('assets/images/shield_logo.png');
 
   final List<ChartData> chartData1 = [
-    ChartData(2010, 35),
-    ChartData(2011, 28),
-    ChartData(2012, 34),
-    ChartData(2013, 32),
-    ChartData(2014, 40)
+    ChartData(10, 199),
+    ChartData(15, 204),
+    ChartData(18, 265),
+    ChartData(25, 200),
+    ChartData(30, 210)
   ];
 
   @override
@@ -722,7 +722,7 @@ class _SecondFutureComplicationScreenState
                                 width: 5,
                               ),
                               Text(
-                                'Headache',
+                                'High Blood Sugar',
                                 style:
                                 TextStyle(color: Colors.white, fontSize: 15),
                               ),
@@ -731,7 +731,7 @@ class _SecondFutureComplicationScreenState
                           Row(
                             children: [
                               Text(
-                                '15 min',
+                                'MAX: 265 mg/dL',
                                 style:
                                 TextStyle(color: Colors.white, fontSize: 15),
                               ),
@@ -775,7 +775,7 @@ class _SecondFutureComplicationScreenState
                       TextStyle(color: Colors.white, fontSize: 15),
                     ),
                     Text(
-                      'dfghjkmndfiohlgj dfgnjdfiog dfioughnodfiug dfiougnjdfogdfoiug difogndfognm dfoignodifgniofd ikfdgoif',
+                      ' Based on your body conditions and Side Effects you experinced there is a higher chance of getting diabeate.Your Blood Sugar level increased 7 times this month and according to your record you have possible diabates warnings. Therefore please get medical assitance as soon as possible.',
                       style:
                       TextStyle(color: Colors.white, fontSize: 15),
                     ),

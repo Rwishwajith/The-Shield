@@ -14,7 +14,7 @@ class _AggregatingFactorsScreenState extends State<AggregatingFactorsScreen> {
 
   DateTime selectedDate = DateTime.now();
   final AssetImage logoImage = const AssetImage('assets/images/shield_logo.png');
-  final AssetImage headAcheImage = const AssetImage('assets/images/stress1.jpeg');
+  final AssetImage headAcheImage = const AssetImage('assets/images/coronavirus-high-fever-png-115832618448mxcavimrk.png');
   final AssetImage coldBeverages = const AssetImage('assets/images/coldBeverages1.jpeg');
   final AssetImage tyramineFood = const AssetImage('assets/images/TryamineFoods.png');
   final AssetImage alcohol = const AssetImage('assets/images/AlcoholandBeer.jpg');
@@ -25,7 +25,11 @@ class _AggregatingFactorsScreenState extends State<AggregatingFactorsScreen> {
   var items = [
     'Select',
     'Headache',
-    'Headache2',
+    'Fever',
+    'Joint Pain',
+    'Blood Pressure',
+    'High Sugar',
+    'Heart Attack',
   ];
 
   List<dynamic> sideEffects = [

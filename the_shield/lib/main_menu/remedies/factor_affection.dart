@@ -16,7 +16,7 @@ class _FactorAffectionScreenState extends State<FactorAffectionScreen> {
 
   DateTime selectedDate = DateTime.now();
   final AssetImage logoImage = const AssetImage('assets/images/shield_logo.png');
-  final AssetImage headAcheImage = const AssetImage('assets/images/stress1.jpeg');
+  final AssetImage headAcheImage = const AssetImage('assets/images/headache.png');
   String _diseases = 'Select';
   String _vaccine = 'Select';
   bool _vaccinationSelected = false;
@@ -76,7 +76,7 @@ class _FactorAffectionScreenState extends State<FactorAffectionScreen> {
             child: Container(
               height: 50,
               child: Text(
-                'Factor Affecting The Side Effects',
+                'Factor for the Side Effects Severity',
                 style: TextStyle(color: Colors.black, fontSize: 20),
               ),
             ),

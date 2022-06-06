@@ -348,7 +348,7 @@ class _VaccineCompatibilityState extends State<VaccineCompatibility> {
                                         BorderRadius.all(Radius.circular(10))),
                                 child: DropdownButton(
                                   value: _gender,
-                                  style: TextStyle(color: Colors.black),
+                                  style: TextStyle(color: Colors.deepPurpleAccent),
                                   items: items.map((String items) {
                                     return DropdownMenuItem(
                                       value: items,
@@ -392,7 +392,7 @@ class _VaccineCompatibilityState extends State<VaccineCompatibility> {
                               isExpanded: true,
                               alignment: AlignmentDirectional.center,
                               value: _diseases,
-                              style: TextStyle(color: Colors.black),
+                              style: TextStyle(color: Colors.deepPurpleAccent),
                               items: items2.map((String items) {
                                 return DropdownMenuItem(
                                   value: items,

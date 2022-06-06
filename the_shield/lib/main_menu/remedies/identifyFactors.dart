@@ -25,7 +25,8 @@ class _IdentifyFactorsScreenState extends State<IdentifyFactorsScreen> {
   var items = [
     'Select',
     'Sinopharm',
-    'pfyser',
+    'Pfizer',
+    'AstraZeneca',
   ];
   DateTime selectedDate = DateTime.now();
 
@@ -86,7 +87,7 @@ class _IdentifyFactorsScreenState extends State<IdentifyFactorsScreen> {
                         width: 10,
                       ),
                       Text(
-                        'Select the date',
+                        'Vaccine Type',
                         style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
                       Icon(
@@ -141,7 +142,7 @@ class _IdentifyFactorsScreenState extends State<IdentifyFactorsScreen> {
                         border: Border.all(color: Colors.white),
                         borderRadius: BorderRadius.all(Radius.circular(30))),
                     child: Text(
-                      'How many hours you work per day?',
+                      'How many hours you Sleep per day?',
                       style: TextStyle(color: Colors.white, fontSize: 15),
                     ),
                   ),
@@ -288,8 +289,8 @@ class _IdentifyFactorsScreenState extends State<IdentifyFactorsScreen> {
                   margin: const EdgeInsets.all(15.0),
                   padding: const EdgeInsets.all(15.0),
                   decoration: BoxDecoration(
-                      color: Colors.purple,
-                      border: Border.all(color: Colors.purple),
+                      color: Colors.red,
+                      border: Border.all(color: Colors.red),
                       borderRadius: BorderRadius.all(Radius.circular(30))),
                   child: Text(
                     'Stress level recorded as High',
