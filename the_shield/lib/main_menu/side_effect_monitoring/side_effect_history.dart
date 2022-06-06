@@ -16,7 +16,7 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
   @override
   Widget build(BuildContext context) {
     final AssetImage logoImage =
-        const AssetImage('assets/images/shield_logo.png');
+    const AssetImage('assets/images/shield_logo.png');
 
     List<dynamic> sideEffectListHistory = [
       {"title": "12", "sub": 'Total side effects'},
@@ -42,12 +42,9 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
               ),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 90.0),
-            child: Image(image: logoImage, width: 50, height: 50),
-          ),
+          title: Image(image: logoImage, width: 50, height: 50),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
@@ -97,7 +94,7 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               'Sun, Jan 24',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                           ],
                         ),
@@ -129,12 +126,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               '18/02/2022',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               '3 Days',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Row(
                               children: [
@@ -168,12 +165,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               'Fever',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               'View',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                           ],
                         ),
@@ -186,12 +183,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               '18/02/2022',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               '12 Days',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Row(
                               children: [
@@ -225,12 +222,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               'Chronic Joint Pain',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               'View',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                           ],
                         ),
@@ -243,12 +240,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               '18/02/2022',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               '4 Days',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Row(
                               children: [
@@ -282,12 +279,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               'Headache',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               'View',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                           ],
                         ),
@@ -300,12 +297,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               '18/02/2022',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               '3 Days',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Row(
                               children: [
@@ -339,12 +336,12 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               'Feaver',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                             Text(
                               'View',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                           ],
                         ),
@@ -423,7 +420,7 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             color: Color(0xff3a2f4b),
                             border: Border.all(color: Color(0xff3a2f4b)),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(20))),
+                            BorderRadius.all(Radius.circular(20))),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -440,7 +437,7 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                             Text(
                               sideEffectListHistory[index]['sub'],
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
+                              TextStyle(color: Colors.white, fontSize: 15),
                             ),
                           ],
                         ),
@@ -491,7 +488,7 @@ class SecondSideEffectHistoryScreen extends StatefulWidget {
 class _SecondSideEffectHistoryScreenState
     extends State<SecondSideEffectHistoryScreen> {
   final AssetImage logoImage =
-      const AssetImage('assets/images/shield_logo.png');
+  const AssetImage('assets/images/shield_logo.png');
 
   final List<ChartData> chartData = [
     ChartData('David', 25, Color.fromRGBO(9, 0, 136, 1)),
@@ -528,12 +525,9 @@ class _SecondSideEffectHistoryScreenState
               ),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 90.0),
-            child: Image(image: logoImage, width: 50, height: 50),
-          ),
+          title: Image(image: logoImage, width: 50, height: 50),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
@@ -604,43 +598,42 @@ class _SecondSideEffectHistoryScreenState
                     padding: const EdgeInsets.only(
                         top: 10.0, bottom: 10.0, left: 20.0, right: 20.0),
                     decoration: BoxDecoration(
-                        // color: Colors.transparent,
+                      // color: Colors.transparent,
                         color: Color(0xff3a2f4b),
                         border: Border.all(color: Colors.transparent),
                         borderRadius: BorderRadius.all(Radius.circular(20))),
                     child:
-                        SfCircularChart(
-                            annotations: <CircularChartAnnotation>[
-                      CircularChartAnnotation(
-                          widget: Container(
-                              child: PhysicalModel(
-                                  child: Container(),
-                                  shape: BoxShape.circle,
-                                  elevation: 2,
-                                  shadowColor: Colors.black,
-                                  color:
-                                       Color.fromRGBO(117, 4, 4, 1.0)))),
-                      CircularChartAnnotation(
-                          widget: Container(
-                              child: Column(
-                        children: [
-                          Text('4',
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 25)),
-                          Text('Total side effects',
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 12)),
-                        ],
-                      )))
-                    ],
-                            series: <CircularSeries>[
+                    SfCircularChart(
+                        annotations: <CircularChartAnnotation>[
+                          CircularChartAnnotation(
+                              widget: Container(
+                                  child: PhysicalModel(
+                                      child: Container(),
+                                      shape: BoxShape.circle,
+                                      elevation: 10,
+                                      shadowColor: Colors.black,
+                                      color:
+                                      const Color.fromRGBO(230, 230, 230, 1)))),
+                          CircularChartAnnotation(
+                              widget: Container(
+                                  child: Column(
+                                    children: [
+                                      Text('4',
+                                          style:
+                                          TextStyle(color: Colors.white, fontSize: 30)),
+                                      Text('Total side effects',
+                                          style:
+                                          TextStyle(color: Colors.white, fontSize: 18)),
+                                    ],
+                                  )))
+                        ], series: <CircularSeries>[
                       DoughnutSeries<ChartData, String>(
                           dataSource: chartData,
                           xValueMapper: (ChartData data, _) => data.x,
                           yValueMapper: (ChartData data, _) => data.y,
                           // Radius of doughnut
-                          innerRadius: '80%',
-                          radius: '100%')
+                          innerRadius: '60%',
+                          radius: '110%')
                     ])),
                 SizedBox(
                   height: 20,
@@ -763,24 +756,24 @@ class _SecondSideEffectHistoryScreenState
                   height: 20,
                 ),
                 Container(
-                  margin: const EdgeInsets.all(5.0),
-                  padding: const EdgeInsets.only(
-                      top: 10.0, bottom: 10.0, left: 20.0, right: 20.0),
-                  decoration: BoxDecoration(
-                    // color: Colors.transparent,
-                      color: Color(0xff3a2f4b),
-                      border: Border.all(color: Colors.transparent),
-                      borderRadius: BorderRadius.all(Radius.circular(20))),
-                  child: SfCartesianChart(
-                      series: <ChartSeries>[
-                        // Renders bar chart
-                        ColumnSeries<ChartDataBar, int>(
-                            dataSource: chartDataBar,
-                            xValueMapper: (ChartDataBar data, _) => data.x,
-                            yValueMapper: (ChartDataBar data, _) => data.y
-                        )
-                      ]
-                  )
+                    margin: const EdgeInsets.all(5.0),
+                    padding: const EdgeInsets.only(
+                        top: 10.0, bottom: 10.0, left: 20.0, right: 20.0),
+                    decoration: BoxDecoration(
+                      // color: Colors.transparent,
+                        color: Color(0xff3a2f4b),
+                        border: Border.all(color: Colors.transparent),
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                    child: SfCartesianChart(
+                        series: <ChartSeries>[
+                          // Renders bar chart
+                          ColumnSeries<ChartDataBar, int>(
+                              dataSource: chartDataBar,
+                              xValueMapper: (ChartDataBar data, _) => data.x,
+                              yValueMapper: (ChartDataBar data, _) => data.y
+                          )
+                        ]
+                    )
                 ),
               ],
             ),
