@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "197451624569",
+    "project_id": "shield-8b437",
+    "storage_bucket": "shield-8b437.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197451624569:android:b834686037ae131b28e4a8",
+        "android_client_info": {
+          "package_name": "com.example.the_shield"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197451624569-clpe4heo88f0to3hghq7oscj2ajvr409.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.the_shield",
+            "certificate_hash": "11dac9f57b36212e572f2580ae00d2f7ae92f483"
+          }
+        },
+        {
+          "client_id": "197451624569-f21vdj697fve3en2dtdvtaeh38i26lsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.the_shield",
+            "certificate_hash": "1f12fef016898174b7bf688da4a95d306821be45"
+          }
+        },
+        {
+          "client_id": "197451624569-jn7kh8cfosu72kj3f67aa8kgl7a3hp2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASIL0AKbzOCJXzYrOrL7BNd_Di55j2V3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197451624569-jn7kh8cfosu72kj3f67aa8kgl7a3hp2m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "197451624569-lqon03k52jusur3njujhhit6aojjnhra.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.theShield"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
