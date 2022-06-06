@@ -249,7 +249,7 @@ class _FactorAffectionScreenState extends State<FactorAffectionScreen> {
                           // );
                         },
                         child: Container(
-                          width: 130,
+                          width: 170,
                           margin: const EdgeInsets.all(5.0),
                           padding: const EdgeInsets.only(
                               top: 10.0, bottom: 10.0, left: 20.0, right: 20.0),
