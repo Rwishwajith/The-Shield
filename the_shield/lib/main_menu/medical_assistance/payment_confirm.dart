@@ -48,15 +48,18 @@ class _PaymentConfirmationScreenState extends State<PaymentConfirmationScreen> {
               ),
             ),
           ),
-          title: Image(image: logoImage, width: 50, height: 50),
+          title: Padding(
+            padding: const EdgeInsets.only(left: 90.0),
+            child: Image(image: logoImage, width: 50, height: 50),
+          ),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
             child: Container(
               height: 50,
-              // child: Text(
-              //   'Vaccine Compatibility',
-              //   style: TextStyle(color: Colors.black, fontSize: 20),
-              // ),
+              child: Text(
+                'Payment Conformation',
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
             ),
           ),
         ),
@@ -469,11 +472,18 @@ class _PaymentConfirmedScreenState extends State<PaymentConfirmedScreen> {
               ),
             ),
           ),
-          title: Image(image: logoImage, width: 50, height: 50),
+          title: Padding(
+            padding: const EdgeInsets.only(left: 90.0),
+            child: Image(image: logoImage, width: 50, height: 50),
+          ),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
             child: Container(
               height: 50,
+              child: Text(
+                'Appointment Status',
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
             ),
           ),
         ),
