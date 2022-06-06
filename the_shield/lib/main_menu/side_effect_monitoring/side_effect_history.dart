@@ -610,23 +610,24 @@ class _SecondSideEffectHistoryScreenState
                               child: PhysicalModel(
                                   child: Container(),
                                   shape: BoxShape.circle,
-                                  elevation: 10,
+                                  elevation: 2,
                                   shadowColor: Colors.black,
                                   color:
-                                      const Color.fromRGBO(230, 230, 230, 1)))),
+                                       Color.fromRGBO(117, 4, 4, 1.0)))),
                       CircularChartAnnotation(
                           widget: Container(
                               child: Column(
                         children: [
                           Text('4',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 30)),
+                                  TextStyle(color: Colors.white, fontSize: 25)),
                           Text('Total side effects',
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 18)),
+                                  TextStyle(color: Colors.white, fontSize: 12)),
                         ],
                       )))
-                    ], series: <CircularSeries>[
+                    ],
+                            series: <CircularSeries>[
                       DoughnutSeries<ChartData, String>(
                           dataSource: chartData,
                           xValueMapper: (ChartData data, _) => data.x,

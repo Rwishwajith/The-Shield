@@ -104,7 +104,7 @@ class _FuturePredictionScreenState
                               child: Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 20.0, bottom: 20.0),
+                                    padding: const EdgeInsets.only(top: 10.0, bottom: 20.0, left: 10.0),
                                     child: Align(
                                       alignment: Alignment.topCenter,
                                       child: Text(
@@ -116,7 +116,7 @@ class _FuturePredictionScreenState
                                   Image(
                                     image: assetImage,
                                     width: 150,
-                                    height: 150,
+                                    height: 140,
                                   ),
 
                                 ],

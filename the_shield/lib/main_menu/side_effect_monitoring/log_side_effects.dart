@@ -365,7 +365,7 @@ class _LogSideEffectsScreenState extends State<LogSideEffectsScreen> {
                           width: 10,
                         ),
                         Text(
-                          'SELECT SIDE EFFECT',
+                          'SIDE EFFECT',
                           style: TextStyle(color: Colors.white, fontSize: 15),
                         ),
                         Icon(
@@ -382,7 +382,7 @@ class _LogSideEffectsScreenState extends State<LogSideEffectsScreen> {
                           items: items.map((String items) {
                             return DropdownMenuItem(
                               value: items,
-                              child: Text(items),
+                              child: Flexible(child: Text(items)),
                             );
                           }).toList(),
                           onChanged: (String? newValue) {

@@ -23,15 +23,20 @@ class _FactorAffectionScreenState extends State<FactorAffectionScreen> {
   var items = [
     'Select',
     'Headache',
-    'Headache2',
+    'Fever',
+    'Joint Pain',
+    'High Blood Pressure',
+    'High Sugar',
+    'Heart Attack',
   ];
 
   var items2 = [
     'Select',
     '1 Day',
-    '2 Days',
     '3 Days',
-    '4 Days',
+    '1 Week',
+    'More Than a Week',
+    'More Than a Month',
   ];
 
   List<dynamic> sideEffects = [
@@ -94,7 +99,7 @@ class _FactorAffectionScreenState extends State<FactorAffectionScreen> {
                         width: 10,
                       ),
                       Text(
-                        'Select Side Effects',
+                        'Side Effects',
                         style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
                       Icon(

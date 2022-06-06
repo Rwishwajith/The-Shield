@@ -123,7 +123,7 @@ class _SideEffectMonitoringScreenState
                                   Image(
                                     image: assetImage,
                                     width: 150,
-                                    height: 150,
+                                    height: 140,
                                   ),
                                 ],
                               )),
