@@ -34,6 +34,13 @@ class _VaccineCompatibilityState extends State<VaccineCompatibility> {
 
   var items2 = [
     'Headache',
+    'Cancer',
+    'Diabetes',
+    'Cholestrol',
+    'Pressure',
+    'Migrane',
+    'Other',
+
   ];
 
   @override
@@ -95,8 +102,8 @@ class _VaccineCompatibilityState extends State<VaccineCompatibility> {
                         style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
                       Text(
-                        'Select the vaccine you are getting',
-                        style: TextStyle(color: Colors.black, fontSize: 20),
+                        'Select the vaccine',
+                        style: TextStyle(color: Colors.black, fontSize: 15),
                       ),
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
