@@ -246,7 +246,7 @@ class _ShareReportsScreenState extends State<ShareReportsScreen> {
                       Row(
                         children: [
                           Container(
-                            width: 105,
+                            width: 85,
                             height: 130,
                             margin: const EdgeInsets.all(5.0),
                             padding: const EdgeInsets.only(
@@ -259,7 +259,7 @@ class _ShareReportsScreenState extends State<ShareReportsScreen> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
-                                Image(image: adobeReader, width: 50, height: 50,),
+                                Image(image: adobeReader, width: 50, height: 48,),
                                 Text(
                                   sideEffectListHistory1[selectedIndex]['title'],
                                   style: TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.bold),
@@ -296,15 +296,15 @@ class _ShareReportsScreenState extends State<ShareReportsScreen> {
                                         ),
                                         Text(
                                           'Cardiologist',
-                                          style: TextStyle(color: Colors.pink.shade900),
+                                          style: TextStyle(color: Colors.white),
                                         ),
                                         Text(
                                           'MOH',
-                                          style: TextStyle(color: Colors.pink.shade900),
+                                          style: TextStyle(color: Colors.white),
                                         ),
                                         Text(
                                           'Kurunegala 5Km',
-                                          style: TextStyle(color: Colors.pink.shade900),
+                                          style: TextStyle(color: Colors.white),
                                         ),
                                         RatingBar.builder(
                                           initialRating: 3,

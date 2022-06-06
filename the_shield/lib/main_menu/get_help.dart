@@ -157,7 +157,7 @@ class _GetHelpScreenState
                                     child: Image(
                                       image: assetImage,
                                       width: 150,
-                                      height: 150,
+                                      height: 120,
                                     ),
                                   ),
 

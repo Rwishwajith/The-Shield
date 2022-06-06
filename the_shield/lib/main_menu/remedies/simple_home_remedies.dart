@@ -280,7 +280,7 @@ class _SimpleHomeRemediesScreenState extends State<SimpleHomeRemediesScreen> {
                       child: Align(
                         alignment: Alignment.topLeft,
                         child: Text(
-                          'Drink water.\nTake some Magnesium.\nLimit Alcohol\nGet Adequate sleep\nAvoid foods high in histamine\nUse essentialOils\nTry a B-Complex vitamins\n'
+                          'Drink water.\nTake some Panadol.\nLimit Alcohol\nGet Adequate sleep\nAvoid foods high in histamine\nUse essentialOils\nTry a B-Complex vitamins\n'
                               'Soothe pain with a cold\nCompress',
                           style: TextStyle(color: Colors.black, fontSize: 18),
                         ),

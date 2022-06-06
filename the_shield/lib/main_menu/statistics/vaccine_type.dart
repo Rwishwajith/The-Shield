@@ -159,7 +159,7 @@ class _VaccineTypeScreenState extends State<VaccineTypeScreen> {
                                   TextStyle(color: Colors.black, fontSize: 8),
                                 ),
                                 Text(
-                                  '255 259',
+                                  '456 875',
                                   style:
                                   TextStyle(color: Colors.black, fontSize: 18),
                                 ),
@@ -176,26 +176,26 @@ class _VaccineTypeScreenState extends State<VaccineTypeScreen> {
                                   children: [
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.green,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.lightGreen,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.lightGreen,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.greenAccent,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red.shade900,
+                                      backgroundColor: Colors.green.shade100,
                                     ),
                                     Text(
-                                      '323',
+                                      '60',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18),
                                     ),
@@ -220,7 +220,7 @@ class _VaccineTypeScreenState extends State<VaccineTypeScreen> {
                                   TextStyle(color: Colors.black, fontSize: 8),
                                 ),
                                 Text(
-                                  '255 259',
+                                  '85 346',
                                   style:
                                   TextStyle(color: Colors.black, fontSize: 18),
                                 ),
@@ -237,26 +237,26 @@ class _VaccineTypeScreenState extends State<VaccineTypeScreen> {
                                   children: [
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.deepOrange,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.deepOrangeAccent,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.orange,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.orangeAccent,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red.shade900,
+                                      backgroundColor: Colors.orange.shade100,
                                     ),
                                     Text(
-                                      '323',
+                                      '233',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18),
                                     ),
@@ -289,8 +289,8 @@ class _VaccineTypeScreenState extends State<VaccineTypeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Vaccine Type',
-                        style: TextStyle(color: Colors.white, fontSize: 25),
+                        'Side Effects based on the Vaccine',
+                        style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -409,29 +409,29 @@ class _VaccineTypeScreenState extends State<VaccineTypeScreen> {
                                   children: [
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.green,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.lightGreen,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.lightGreen,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.greenAccent,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red.shade900,
+                                      backgroundColor: Colors.green.shade100,
                                     ),
 
                                   ],
                                 ),
                                 Text(
-                                  '650',
+                                  '160',
                                   style:
                                   TextStyle(color: Colors.black, fontSize: 18),
                                 ),
@@ -464,29 +464,29 @@ class _VaccineTypeScreenState extends State<VaccineTypeScreen> {
                                   children: [
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.deepOrange,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.deepOrangeAccent,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.orange,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red,
+                                      backgroundColor: Colors.orangeAccent,
                                     ),
                                     CircleAvatar(
                                       radius: 6,
-                                      backgroundColor: Colors.red.shade900,
+                                      backgroundColor: Colors.orange.shade100,
                                     ),
 
                                   ],
                                 ),
                                 Text(
-                                  '650',
+                                  '440',
                                   style:
                                   TextStyle(color: Colors.black, fontSize: 18),
                                 ),
