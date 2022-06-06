@@ -1,6 +1,6 @@
-# the_shield
+# The Shield
 
-Flutter - year last project
+Flutter - Reserach Application
 
 ## Getting Started
 
