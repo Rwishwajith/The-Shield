@@ -57,9 +57,12 @@ class _ForumDiscussionScreenState extends State<ForumDiscussionScreen> {
               ),
             ),
           ),
-          title: Image(image: logoImage, width: 50, height: 50),
+          title: Padding(
+            padding: const EdgeInsets.only(left: 90.0),
+            child: Image(image: logoImage, width: 50, height: 50),
+          ),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
@@ -118,7 +121,7 @@ class _ForumDiscussionScreenState extends State<ForumDiscussionScreen> {
                         style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
                       Text(
-                        'Literature',
+                        'Q/A',
                         style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
                     ],
