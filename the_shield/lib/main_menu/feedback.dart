@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
+import 'medical_assistance/book_appointment.dart';
+
 class FeedbackScreen extends StatefulWidget {
   const FeedbackScreen({Key? key}) : super(key: key);
 
@@ -12,7 +14,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
   @override
   Widget build(BuildContext context) {
     final AssetImage logoImage =
-        const AssetImage('assets/images/shield_logo.png');
+    const AssetImage('assets/images/shield_logo.png');
     final AssetImage assetImage = const AssetImage('assets/images/lalith.JPG');
     List<dynamic> sideEffectList = [
       {"title": "LOG SIDE EFFECTS", "image": 'assets/images/Lse.PNG'},
@@ -39,12 +41,9 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
               ),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 90.0),
-            child: Image(image: logoImage, width: 50, height: 50),
-          ),
+          title: Image(image: logoImage, width: 50, height: 50),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
             child: Container(
               height: 50,
               // child: Text(
@@ -94,12 +93,12 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                         Row(
                           children: [
                             ClipRRect(
-                              borderRadius: BorderRadius.circular(30),
+                                borderRadius: BorderRadius.circular(30),
                                 child: Image(
-                              image: assetImage,
-                              width: 110,
-                              height: 110,
-                            )),
+                                  image: assetImage,
+                                  width: 110,
+                                  height: 110,
+                                )),
                             Padding(
                               padding: const EdgeInsets.only(left: 8.0),
                               child: Column(
@@ -130,7 +129,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                                     allowHalfRating: true,
                                     itemCount: 5,
                                     itemPadding:
-                                        EdgeInsets.symmetric(horizontal: 1.0),
+                                    EdgeInsets.symmetric(horizontal: 1.0),
                                     itemBuilder: (context, _) => Icon(
                                       Icons.star,
                                       color: Colors.amber,
@@ -151,7 +150,11 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                 ),
                 ElevatedButton(
                     onPressed: (){
-                      print('tapped');
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) => BookAppointmentScreen(),
+                        ),
+                      );
                     },
                     child: Container(
                       width: double.infinity,
