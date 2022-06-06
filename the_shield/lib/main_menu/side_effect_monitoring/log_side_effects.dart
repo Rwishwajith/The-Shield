@@ -24,26 +24,34 @@ class _LogSideEffectsScreenState extends State<LogSideEffectsScreen> {
   var items = [
     'Select',
     'Headache',
-    'Headache2',
+    'Fever',
+    'Joint Pain',
+    'High Blood Pressure',
+    'High Sugar',
+    'Heart Attack',
   ];
 
   var items2 = [
     'Select',
     '1 Day',
-    '2 Days',
     '3 Days',
-    '4 Days',
+    '1 Week',
+    'More Than a Week',
+    'More Than a Month',
   ];
 
   var items3 = [
     'Select',
     'Sinopharm',
+    'Aztra Zenica',
+    'Pfizer',
   ];
 
   var items4 = [
     'Select',
     '1st dose',
     '2nd dose',
+    '3rd Dose',
   ];
 
 
