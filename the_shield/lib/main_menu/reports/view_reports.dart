@@ -18,11 +18,11 @@ class _ViewReportsScreenState extends State<ViewReportsScreen> {
 
   List<dynamic> generateList = [
     {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
-    {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
-    {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
-    {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
-    {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
-    {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
+    {"title": "09/04/2022", "sub": 'Cardiologist - Ruchira Herath'},
+    {"title": "09/04/2022", "sub": 'Cardiologist - Deshani Rajapaksha'},
+    {"title": "09/04/2022", "sub": 'Cardiologist - Ruchini Herath'},
+    {"title": "09/04/2022", "sub": 'Cardiologist - Senerath Bandara'},
+    {"title": "09/04/2022", "sub": 'Cardiologist - Kumari Balasuirya'},
     {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
     {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
     {"title": "09/04/2022", "sub": 'Cardiologist - Lalith Rajapaksha'},
@@ -52,9 +52,12 @@ class _ViewReportsScreenState extends State<ViewReportsScreen> {
               ),
             ),
           ),
-          title: Image(image: logoImage, width: 50, height: 50),
+          title: Padding(
+            padding: const EdgeInsets.only(left: 90.0),
+            child: Image(image: logoImage, width: 50, height: 50),
+          ),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
