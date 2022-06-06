@@ -13,7 +13,7 @@ class CheckPredictionsScreen extends StatefulWidget {
 
 class _CheckPredictionsScreenState extends State<CheckPredictionsScreen> {
   final AssetImage logoImage =
-      const AssetImage('assets/images/shield_logo.png');
+  const AssetImage('assets/images/shield_logo.png');
 
   @override
   Widget build(BuildContext context) {
@@ -35,12 +35,9 @@ class _CheckPredictionsScreenState extends State<CheckPredictionsScreen> {
               ),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 90.0),
-            child: Image(image: logoImage, width: 50, height: 50),
-          ),
+          title: Image(image: logoImage, width: 50, height: 50),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
@@ -178,26 +175,31 @@ class FutureComplicationScreen extends StatefulWidget {
 }
 
 class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
+
+  final AssetImage logoImage = const AssetImage('assets/images/shield_logo.png');
+  DateTime selectedDate = DateTime.now();
+  String dateNow = '';
+
   @override
   Widget build(BuildContext context) {
-    final AssetImage logoImage =
-        const AssetImage('assets/images/shield_logo.png');
+
+
 
     List<dynamic> sideEffectListHistory1 = [
       {
         "title": "Possible heart attack",
         "sub":
-            'Take a look into our predictions and look closer to the sections highlighted in Red.'
+        'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
       {
         "title": "Diabates wanings",
         "sub":
-            'Take a look into our predictions and look closer to the sections highlighted in Red.'
+        'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
       {
         "title": "Diabates wanings",
         "sub":
-            'Take a look into our predictions and look closer to the sections highlighted in Red.'
+        'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
     ];
 
@@ -205,19 +207,34 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
       {
         "title": "Possible chronic joint pain",
         "sub":
-            'Take a look into our predictions and look closer to the sections highlighted in Red.'
+        'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
       {
         "title": "High fever",
         "sub":
-            'Take a look into our predictions and look closer to the sections highlighted in Red.'
+        'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
       {
         "title": "00",
         "sub":
-            'Take a look into our predictions and look closer to the sections highlighted in Red.'
+        'Take a look into our predictions and look closer to the sections highlighted in Red.'
       },
     ];
+
+    _selectDate(BuildContext context) async {
+      final DateTime? selected = await showDatePicker(
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(1950),
+        lastDate: DateTime(2030),
+      );
+      if (selected != null && selected != selectedDate)
+        setState(() {
+          selectedDate = selected;
+          dateNow =
+          '${selectedDate.day}/${selectedDate.month}/${selectedDate.year}';
+        });
+    }
 
     return Scaffold(
         backgroundColor: Color(0xffcbc5f9),
@@ -237,12 +254,9 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
               ),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 90.0),
-            child: Image(image: logoImage, width: 50, height: 50),
-          ),
+          title: Image(image: logoImage, width: 50, height: 50),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
@@ -282,18 +296,23 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                           color: Colors.black,
                           size: 30,
                         ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.calendar_today,
-                              color: Colors.white,
-                            ),
-                            Text(
-                              'Sun, Jan 24',
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 15),
-                            ),
-                          ],
+                        GestureDetector(
+                          onTap: () {
+                            _selectDate(context);
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.calendar_today,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                dateNow,
+                                style:
+                                TextStyle(color: Colors.white, fontSize: 15),
+                              ),
+                            ],
+                          ),
                         ),
                         SizedBox(
                           width: 10,
@@ -377,7 +396,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                             // color: Color(0xff3a2f4b),
                             border: Border.all(color: Colors.transparent),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(20))),
+                            BorderRadius.all(Radius.circular(20))),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -395,7 +414,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                             Text(
                               sideEffectListHistory1[index]['sub'],
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 12),
+                              TextStyle(color: Colors.white, fontSize: 12),
                             ),
                             Container(
                               margin: const EdgeInsets.all(5.0),
@@ -408,7 +427,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                                   color: Colors.purple,
                                   border: Border.all(color: Colors.purple),
                                   borderRadius:
-                                      BorderRadius.all(Radius.circular(20))),
+                                  BorderRadius.all(Radius.circular(20))),
                               child: Text(
                                 'View',
                                 style: TextStyle(
@@ -465,7 +484,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                             // color: Color(0xff3a2f4b),
                             border: Border.all(color: Colors.transparent),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(20))),
+                            BorderRadius.all(Radius.circular(20))),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -483,7 +502,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                             Text(
                               sideEffectListHistory2[index]['sub'],
                               style:
-                                  TextStyle(color: Colors.white, fontSize: 12),
+                              TextStyle(color: Colors.white, fontSize: 12),
                             ),
                             GestureDetector(
                               onTap: () {
@@ -504,7 +523,7 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                                     color: Colors.purple,
                                     border: Border.all(color: Colors.purple),
                                     borderRadius:
-                                        BorderRadius.all(Radius.circular(20))),
+                                    BorderRadius.all(Radius.circular(20))),
                                 child: Text(
                                   'View',
                                   style: TextStyle(
@@ -567,12 +586,9 @@ class _SecondFutureComplicationScreenState
             ),
           ),
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(left: 90.0),
-          child: Image(image: logoImage, width: 50, height: 50),
-        ),
+        title: Image(image: logoImage, width: 50, height: 50),
         flexibleSpace: Padding(
-          padding: const EdgeInsets.only(top: 160.0, left: 20.0),
+          padding: const EdgeInsets.only(top: 130.0, left: 20.0),
           child: Container(
             height: 50,
             child: Text(

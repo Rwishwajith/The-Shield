@@ -9,6 +9,8 @@ class PredictionHistoryScreen extends StatefulWidget {
 
 class _PredictionHistoryScreenState extends State<PredictionHistoryScreen> {
 
+  DateTime selectedDate = DateTime.now();
+  String dateNow = '';
   final AssetImage logoImage =
   const AssetImage('assets/images/shield_logo.png');
 
@@ -26,6 +28,22 @@ class _PredictionHistoryScreenState extends State<PredictionHistoryScreen> {
 
   @override
   Widget build(BuildContext context) {
+
+    _selectDate(BuildContext context) async {
+      final DateTime? selected = await showDatePicker(
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(1950),
+        lastDate: DateTime(2030),
+      );
+      if (selected != null && selected != selectedDate)
+        setState(() {
+          selectedDate = selected;
+          dateNow =
+          '${selectedDate.day}/${selectedDate.month}/${selectedDate.year}';
+        });
+    }
+
     return Scaffold(
         backgroundColor: Color(0xffcbc5f9),
         appBar: AppBar(
@@ -44,12 +62,9 @@ class _PredictionHistoryScreenState extends State<PredictionHistoryScreen> {
               ),
             ),
           ),
-          title: Padding(
-            padding: const EdgeInsets.only(left: 90.0),
-            child: Image(image: logoImage, width: 50, height: 50),
-          ),
+          title: Image(image: logoImage, width: 50, height: 50),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
@@ -89,18 +104,23 @@ class _PredictionHistoryScreenState extends State<PredictionHistoryScreen> {
                           color: Colors.black,
                           size: 30,
                         ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.calendar_today,
-                              color: Colors.white,
-                            ),
-                            Text(
-                              'Sun, Jan 24',
-                              style:
-                              TextStyle(color: Colors.white, fontSize: 15),
-                            ),
-                          ],
+                        GestureDetector(
+                          onTap: () {
+                            _selectDate(context);
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.calendar_today,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                dateNow,
+                                style:
+                                TextStyle(color: Colors.white, fontSize: 15),
+                              ),
+                            ],
+                          ),
                         ),
                         SizedBox(
                           width: 10,
