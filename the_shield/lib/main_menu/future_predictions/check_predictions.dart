@@ -422,22 +422,31 @@ class _FutureComplicationScreenState extends State<FutureComplicationScreen> {
                               style:
                               TextStyle(color: Colors.white, fontSize: 12),
                             ),
-                            Container(
-                              margin: const EdgeInsets.all(5.0),
-                              padding: const EdgeInsets.only(
-                                  top: 5.0,
-                                  bottom: 5.0,
-                                  left: 15.0,
-                                  right: 15.0),
-                              decoration: BoxDecoration(
-                                  color: Colors.purple,
-                                  border: Border.all(color: Colors.purple),
-                                  borderRadius:
-                                  BorderRadius.all(Radius.circular(20))),
-                              child: Text(
-                                'View',
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 15),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).pushReplacement(
+                                  MaterialPageRoute(
+                                    builder: (context) => SecondFutureComplicationScreen(),
+                                  ),
+                                );
+                              },
+                              child: Container(
+                                margin: const EdgeInsets.all(5.0),
+                                padding: const EdgeInsets.only(
+                                    top: 5.0,
+                                    bottom: 5.0,
+                                    left: 15.0,
+                                    right: 15.0),
+                                decoration: BoxDecoration(
+                                    color: Colors.purple,
+                                    border: Border.all(color: Colors.purple),
+                                    borderRadius:
+                                    BorderRadius.all(Radius.circular(20))),
+                                child: Text(
+                                  'View',
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 15),
+                                ),
                               ),
                             ),
                           ],

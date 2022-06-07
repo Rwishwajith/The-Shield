@@ -43,11 +43,48 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
   String date = "Select Date";
   String illness = "Select the discomfort illness";
 
+  var doctors = [
+    'Doctor',
+    'Dr. Ranjith',
+    'pfyser',
+  ];
+
+  var areas = [
+    'SelectArea',
+    'Dr. Ranjith',
+    'pfyser',
+  ];
+
+  var illnesses = [
+    'Select the discomfort illness',
+    'Dr. Ranjith',
+    'pfyser',
+  ];
+
+  DateTime selectedDate = DateTime.now();
+  String dateNow = 'Select Date';
+
   final AssetImage logoImage =
       const AssetImage('assets/images/shield_logo.png');
 
   @override
   Widget build(BuildContext context) {
+
+    _selectDate(BuildContext context) async {
+      final DateTime? selected = await showDatePicker(
+        context: context,
+        initialDate: selectedDate,
+        firstDate: DateTime(1950),
+        lastDate: DateTime(2030),
+      );
+      if (selected != null && selected != selectedDate)
+        setState(() {
+          selectedDate = selected;
+          dateNow =
+          '${selectedDate.day}/${selectedDate.month}/${selectedDate.year}';
+        });
+    }
+
     return Scaffold(
         backgroundColor: Color(0xffcbc5f9),
         appBar: AppBar(
@@ -88,99 +125,145 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      Container(
-                        height: 60,
-                        child: Padding(
-                          padding:
-                          EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                          child: TextFormField(
-                            style: TextStyle(color: Colors.black),
-                            autofocus: false,
-                            autocorrect: false,
-                            keyboardType: TextInputType.visiblePassword,
-                            // validator: (value) => value.isEmpty?'Please enter email':null,
-                            onSaved: (value) => doctor = value!,
-                            decoration: InputDecoration(
-                              prefixIcon: Icon(Icons.search,color: Colors.black,),
-                                fillColor: Colors.white,
-                                filled: true,
-                                border: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: double.infinity,
+                          color: Colors.white,
+                          height: 60,
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.search,
+                                color: Colors.black,
+                                size: 24,
+                              ),
+                              DropdownButton(
+                                value: doctor,
+                                underline: Container(
+                                  color: Colors.transparent,
                                 ),
-                                labelText: doctor,
-                                labelStyle: TextStyle(color: Colors.black)),
+                                style: TextStyle(color: Colors.black),
+                                items: doctors.map((String items) {
+                                  return DropdownMenuItem(
+                                    value: items,
+                                    child: Text(items),
+                                  );
+                                }).toList(),
+                                onChanged: (String? newValue) {
+                                  setState(() {
+                                    doctor = newValue!;
+                                  });
+                                },
+                                // icon: Padding(
+                                //   padding: const EdgeInsets.only(left: 55.0),
+                                //   child: Icon(
+                                //     Icons.keyboard_arrow_down,
+                                //     color: Colors.red.shade900,
+                                //   ),
+                                // ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
-                      Container(
-                        height: 60,
-                        child: Padding(
-                          padding:
-                          EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                          child: TextFormField(
-                            style: TextStyle(color: Colors.black),
-                            autofocus: false,
-                            autocorrect: false,
-                            keyboardType: TextInputType.visiblePassword,
-                            // validator: (value) => value.isEmpty?'Please enter email':null,
-                            onSaved: (value) => area = value!,
-                            decoration: InputDecoration(
-                                prefixIcon: Icon(Icons.location_on_outlined,color: Colors.black,),
-                                fillColor: Colors.white,
-                                filled: true,
-                                border: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: double.infinity,
+                          color: Colors.white,
+                          height: 60,
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.location_on_outlined,
+                                color: Colors.black,
+                                size: 24,
+                              ),
+                              DropdownButton(
+                                value: area,
+                                underline: Container(
+                                  color: Colors.transparent,
                                 ),
-                                labelText: area,
-                                labelStyle: TextStyle(color: Colors.black)),
+                                style: TextStyle(color: Colors.black),
+                                items: areas.map((String items) {
+                                  return DropdownMenuItem(
+                                    value: items,
+                                    child: Text(items),
+                                  );
+                                }).toList(),
+                                onChanged: (String? newValue) {
+                                  setState(() {
+                                    area = newValue!;
+                                  });
+                                },
+                              ),
+                            ],
                           ),
                         ),
                       ),
-                      Container(
-                        height: 60,
-                        child: Padding(
-                          padding:
-                          EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                          child: TextFormField(
-                            style: TextStyle(color: Colors.black),
-                            autofocus: false,
-                            autocorrect: false,
-                            keyboardType: TextInputType.visiblePassword,
-                            // validator: (value) => value.isEmpty?'Please enter email':null,
-                            onSaved: (value) => date = value!,
-                            decoration: InputDecoration(
-                                prefixIcon: Icon(Icons.calendar_today,color: Colors.black,),
-                                fillColor: Colors.white,
-                                filled: true,
-                                border: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Colors.white),
-                                ),
-                                labelText: date,
-                                labelStyle: TextStyle(color: Colors.black)),
+                      GestureDetector(
+                        onTap: () {
+                          _selectDate(context);
+                        },
+                        child: Container(
+                          height: 60,
+                          child: Padding(
+                            padding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                            child: TextFormField(
+                              enabled: false,
+                              style: TextStyle(color: Colors.black),
+                              autofocus: false,
+                              autocorrect: false,
+                              keyboardType: TextInputType.visiblePassword,
+                              // validator: (value) => value.isEmpty?'Please enter email':null,
+                              onSaved: (value) => date = value!,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.calendar_today,color: Colors.black,),
+                                  fillColor: Colors.white,
+                                  filled: true,
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.white),
+                                  ),
+                                  labelText: dateNow,
+                                  labelStyle: TextStyle(color: Colors.black)),
+                            ),
                           ),
                         ),
                       ),
-                      Container(
-                        height: 60,
-                        child: Padding(
-                          padding:
-                          EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                          child: TextFormField(
-                            style: TextStyle(color: Colors.black),
-                            autofocus: false,
-                            autocorrect: false,
-                            keyboardType: TextInputType.visiblePassword,
-                            // validator: (value) => value.isEmpty?'Please enter email':null,
-                            onSaved: (value) => illness = value!,
-                            decoration: InputDecoration(
-                                prefixIcon: Icon(Icons.coronavirus_outlined,color: Colors.black,),
-                                fillColor: Colors.white,
-                                filled: true,
-                                border: OutlineInputBorder(
-                                  borderSide: BorderSide(color: Colors.white),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          width: double.infinity,
+                          color: Colors.white,
+                          height: 60,
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.coronavirus_outlined,
+                                color: Colors.black,
+                                size: 24,
+                              ),
+                              DropdownButton(
+                                value: illness,
+                                underline: Container(
+                                  color: Colors.transparent,
                                 ),
-                                labelText: illness,
-                                labelStyle: TextStyle(color: Colors.black)),
+                                style: TextStyle(color: Colors.black),
+                                items: illnesses.map((String items) {
+                                  return DropdownMenuItem(
+                                    value: items,
+                                    child: Text(items),
+                                  );
+                                }).toList(),
+                                onChanged: (String? newValue) {
+                                  setState(() {
+                                    illness = newValue!;
+                                  });
+                                },
+                              ),
+                            ],
                           ),
                         ),
                       ),

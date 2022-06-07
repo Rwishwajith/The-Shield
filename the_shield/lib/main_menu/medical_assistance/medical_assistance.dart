@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_shield/main_menu/reports/reports.dart';
 import 'package:the_shield/main_menu/vaccine_compatibility.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../get_help.dart';
 import 'book_appointment.dart';
@@ -105,6 +106,8 @@ class _MedicalAssistanceScreenState extends State<MedicalAssistanceScreen> {
                               builder: (context) => GetHelpScreen(),
                             ),
                           );
+                          } else if(getHelpList[index]['title'] == 'SEND AN EMAIL/TEXT') {
+                            launch('mailto:ruchira@gmail.com?subject=This is Subject Title&body=This is Body of Email');
                           }
                         },
                         child: Card(
