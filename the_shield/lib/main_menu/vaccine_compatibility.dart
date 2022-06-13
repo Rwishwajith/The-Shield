@@ -457,7 +457,7 @@ class _VaccineCompatibilityState extends State<VaccineCompatibility> {
                   child: Column(
                     children: [
                       Text(
-                        'Based on the given data, SInopharm BIBP vaccine is',
+                        'Based on the given data, Sinopharm BIBP vaccine is',
                         style: TextStyle(color: Colors.black, fontSize: 15),
                       ),
                       Text(
@@ -600,7 +600,7 @@ class _PossibleSideEffectsScreenState extends State<PossibleSideEffectsScreen> {
     final AssetImage logoImage =
         const AssetImage('assets/images/shield_logo.png');
     final AssetImage backPain = const AssetImage('assets/images/Backpain.png');
-    final AssetImage headache = const AssetImage('assets/images/Headache.png');
+    final AssetImage headache = const AssetImage('assets/images/573204.png');
     final AssetImage shortness =
         const AssetImage('assets/images/Shortnessofbreath.jpg');
     final AssetImage highBlood =
@@ -1194,7 +1194,7 @@ class _SideEffectPrecautionsScreenState
     final AssetImage logoImage =
         const AssetImage('assets/images/shield_logo.png');
     final AssetImage backPain = const AssetImage('assets/images/Backpain.png');
-    final AssetImage headache = const AssetImage('assets/images/Headache.png');
+    final AssetImage headache = const AssetImage('assets/images/573204.png');
     final AssetImage shortness =
         const AssetImage('assets/images/Shortnessofbreath.jpg');
     final AssetImage highBlood =
@@ -1441,7 +1441,7 @@ class _SideEffectPrecautionsScreenState
                           width: 5,
                         ),
                         Container(
-                          width: 155,
+                          width: 126,
                           height: 70,
                           padding: EdgeInsets.all(10.0),
                           decoration: BoxDecoration(
@@ -1453,7 +1453,7 @@ class _SideEffectPrecautionsScreenState
                             children: [
                               Image(
                                 image: dayoff,
-                                width: 50,
+                                width: 41,
                                 height: 50,
                               ),
                               Text(
@@ -1503,7 +1503,7 @@ class _SideEffectPrecautionsScreenState
                           width: 5,
                         ),
                         Container(
-                          width: 155,
+                          width: 126,
                           height: 70,
                           padding: EdgeInsets.all(10.0),
                           decoration: BoxDecoration(
@@ -1515,7 +1515,7 @@ class _SideEffectPrecautionsScreenState
                             children: [
                               Image(
                                 image: penadol,
-                                width: 50,
+                                width: 29,
                                 height: 50,
                               ),
                               Text(

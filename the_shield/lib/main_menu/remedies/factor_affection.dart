@@ -16,7 +16,7 @@ class _FactorAffectionScreenState extends State<FactorAffectionScreen> {
 
   DateTime selectedDate = DateTime.now();
   final AssetImage logoImage = const AssetImage('assets/images/shield_logo.png');
-  final AssetImage headAcheImage = const AssetImage('assets/images/headache.png');
+  final AssetImage headAcheImage = const AssetImage('assets/images/f7head.jpg');
   String _diseases = 'Select';
   String _vaccine = 'Select';
   bool _vaccinationSelected = false;
