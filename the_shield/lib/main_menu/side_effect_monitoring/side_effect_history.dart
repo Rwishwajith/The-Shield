@@ -638,8 +638,8 @@ class _SecondSideEffectHistoryScreenState
                           xValueMapper: (ChartData data, _) => data.x,
                           yValueMapper: (ChartData data, _) => data.y,
                           // Radius of doughnut
-                          innerRadius: '35%',
-                          radius: '110%')
+                          innerRadius: '80%',
+                          radius: '120%')
                     ])),
                 SizedBox(
                   height: 20,
