@@ -6,6 +6,8 @@ import 'package:the_shield/main_menu/side_effect_monitoring/log_side_effects.dar
 import 'package:the_shield/main_menu/side_effect_monitoring/side_effect_history.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'medical_assistance/habitual_changes.dart';
+
 class GetHelpScreen extends StatefulWidget {
   const GetHelpScreen({Key? key}) : super(key: key);
 
@@ -50,6 +52,7 @@ class _GetHelpScreenState
       {"title": "SIMPLE HOME REMEDIES", "image": 'assets/images/SHR.PNG'},
       {"title": "FACTORS AFFECTING THE SIDE EFFECTS", "image": 'assets/images/FASE.PNG'},
       {"title": "AGGREGATING FACTORS", "image": 'assets/images/AGF.PNG'},
+      {"title": "HABITUAL CHANGES", "image": 'assets/images/life-icon-22.jpg'},
     ];
 
     return Scaffold(
@@ -133,6 +136,13 @@ class _GetHelpScreenState
                               context,
                               MaterialPageRoute(
                                 builder: (context) => AggregatingFactorsScreen(),
+                              ),
+                            );
+                          } else if(sideEffectList[index]['title'] == 'HABITUAL CHANGES') {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HabitualChangesScreen(),
                               ),
                             );
                           }
