@@ -39,7 +39,7 @@ class _HabitualChangesScreenState extends State<HabitualChangesScreen> {
   ];
 
   List<dynamic> line2 = [
-    {"title": "Exercise", "image": 'assets/images/Stress.png'},
+    {"title": "Exercise", "image": 'assets/images/exercise.jpg'},
     {"title": "Sleeping pattern", "image": 'assets/images/male-sleeping.jpg'},
     {"title": "Alcohol and Smocking", "image": 'assets/images/sexual_dysfunction2.jpg'},
   ];
@@ -66,9 +66,12 @@ class _HabitualChangesScreenState extends State<HabitualChangesScreen> {
               ),
             ),
           ),
-          title: Image(image: logoImage, width: 50, height: 50),
+          title: Padding(
+            padding: const EdgeInsets.only(left: 90.0),
+            child: Image(image: logoImage, width: 50, height: 50),
+          ),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
@@ -204,7 +207,8 @@ class _HabitualChangesScreenState extends State<HabitualChangesScreen> {
                         style: TextStyle(color: Colors.white, fontSize: 22),
                       ),
                       Text(
-                        'Based on your body conditions and side effects you can follow.The suggested habitual changes to reduce the severity and effects of the vaccine',
+                        'Make half your plate fruits and vegetables.\nChoose red, orange, and dark-green vegetables along with other vegetables for your meals. Add fruit to meals as part of main or side dishes or as dessert. The more colorful you make your plate, the more likely you are to get the vitamins, minerals, and fiber your body needs to be healthy.\n \nMake half the grains you eat whole grains\nSwitch from a refined-grain food to a whole-grain food. For example, choose whole-wheat bread instead of white bread. Read the ingredients list and choose products that list a whole-grain ingredients first. Look for things like: “whole wheat,” “brown rice,” “bulgur,” “buckwheat,” “oatmeal,” “rolled oats,” quinoa,” or “wild rice.”\n \n Switch to fat-free or low-fat (1%) milk\nBoth have the same amount of calcium and other essential nutrients as whole milk, but fewer calories and less saturated fat.\n \nChoose a variety of lean protein foods\n'
+                      'Protein foods group includes not only meat, poultry, and seafood, but also dry beans or peas, eggs, nuts, and seeds. Select leaner cuts of ground beef (where the label says 90% lean or higher), turkey breast, or chicken breast.\n \n Compare sodium in foods \n Use the Nutrition Facts label to choose lower sodium versions of foods like soup, bread, and frozen meals. Select canned foods labeled “low sodium,” “reduced sodium,” or “no salt added.”',
                         style: TextStyle(color: Colors.white, fontSize: 15),
                       ),
                     ],
