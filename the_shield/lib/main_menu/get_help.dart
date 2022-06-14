@@ -53,7 +53,7 @@ class _GetHelpScreenState
       {"title": "SIMPLE HOME REMEDIES", "image": 'assets/images/SHR.PNG'},
       {"title": "FACTORS AFFECTING THE SIDE EFFECTS", "image": 'assets/images/FASE.PNG'},
       {"title": "AGGREGATING FACTORS", "image": 'assets/images/AGF.PNG'},
-      {"title": "HABITUAL CHANGES", "image": 'assets/images/life-icon-22.jpg'},
+      {"title": "HABITUAL CHANGES", "image": 'assets/images/habbit.jpg'},
     ];
 
     return Scaffold(
