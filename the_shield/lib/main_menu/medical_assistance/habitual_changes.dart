@@ -110,7 +110,7 @@ class _HabitualChangesScreenState extends State<HabitualChangesScreen> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.all(Radius.circular(50))),
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
                 child: Column(
                   children: [
                     Padding(

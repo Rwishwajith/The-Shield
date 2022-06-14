@@ -45,20 +45,24 @@ class _BookAppointmentScreenState extends State<BookAppointmentScreen> {
 
   var doctors = [
     'Doctor',
-    'Dr. Ranjith',
-    'pfyser',
+    'Dr. Lalith Rajapaksha',
+    'Dr. Ruchira Wishwajith',
+    'Dr. Senarath Bandara',
   ];
 
   var areas = [
     'SelectArea',
-    'Dr. Ranjith',
-    'pfyser',
+    'Kurunegala',
+    'Colombo',
+    'Kandy',
   ];
 
   var illnesses = [
     'Select the discomfort illness',
-    'Dr. Ranjith',
-    'pfyser',
+    'Fever',
+    'Headache',
+    'Cold',
+    'Dizziness',
   ];
 
   DateTime selectedDate = DateTime.now();
@@ -431,9 +435,9 @@ class _BookDoctorScreenState extends State<BookDoctorScreen> {
   final AssetImage sriLanka = const AssetImage('assets/images/srilanka.png');
 
   List<dynamic> availableSlots = [
-    {"title": "Thu, 09 May", "sub": '3 Slots available'},
-    {"title": "Thu, 10 May", "sub": '2 Slots available'},
-    {"title": "Thu, 11 May", "sub": '5 Slots available'},
+    {"title": "Fri, 17 June", "sub": '3 Slots available'},
+    {"title": "Sat, 18 June", "sub": '2 Slots available'},
+    {"title": "Sun, 19 June", "sub": '5 Slots available'},
   ];
 
   @override
@@ -613,7 +617,7 @@ class _BookDoctorScreenState extends State<BookDoctorScreen> {
                                     border: Border.all(color: Colors.black),
                                     borderRadius: BorderRadius.all(Radius.circular(20))),
                                 child: Text(
-                                  '08:00',
+                                  '09:00',
                                   style: TextStyle(color: Colors.black, fontSize: 11),
                                 ),
                               ),
@@ -626,7 +630,7 @@ class _BookDoctorScreenState extends State<BookDoctorScreen> {
                                     border: Border.all(color: Colors.black),
                                     borderRadius: BorderRadius.all(Radius.circular(20))),
                                 child: Text(
-                                  '08:00',
+                                  '10:00',
                                   style: TextStyle(color: Colors.black, fontSize: 11),
                                 ),
                               ),

@@ -21,21 +21,21 @@ class _AgeGroupScreenState
   final AssetImage older = const AssetImage('assets/images/olderman02.jpg');
 
   final List<ChartData> chartData = [
-    ChartData('David', 25, Color.fromRGBO(92, 2, 187, 1.0)),
-    ChartData('Steve', 38, Color.fromRGBO(255, 124, 233, 1.0)),
-    ChartData('Jack', 34, Color.fromRGBO(55, 118, 255, 1.0)),
-    ChartData('Others', 52, Color.fromRGBO(182, 107, 243, 1.0))
+    ChartData('child', 25, Color.fromRGBO(92, 2, 187, 1.0)),
+    ChartData('young', 38, Color.fromRGBO(255, 124, 233, 1.0)),
+    ChartData('adult', 34, Color.fromRGBO(55, 118, 255, 1.0)),
+    ChartData('older', 52, Color.fromRGBO(182, 107, 243, 1.0))
   ];
 
   final List<ChartDataLine> chartDataLine = [
-    ChartDataLine('2010', 10, 40, 45, 50),
-    ChartDataLine('2011', 10, 20, 45, 50),
-    ChartDataLine('2012', 10, 40, 45, 50),
-    ChartDataLine('2013', 10, 40, 45, 50),
+    ChartDataLine('below 12', 10, 40, 45, 50),
+    ChartDataLine('12-30', 10, 20, 45, 50),
+    ChartDataLine('30-60', 10, 40, 45, 50),
+    ChartDataLine('above 60', 10, 40, 45, 50),
   ];
 
   final List<ChartDataBar> chartDataBar = [
-    ChartDataBar(2010, 35),
+    ChartDataBar(2010, 0),
     ChartDataBar(2011, 28),
     ChartDataBar(2012, 34),
     ChartDataBar(2013, 32),
@@ -111,7 +111,7 @@ class _AgeGroupScreenState
                                   Text('Below 12',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
-                                  Text('255 259',
+                                  Text('No Data',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 25)),
                                 ],
@@ -130,7 +130,7 @@ class _AgeGroupScreenState
                                   Text('12-30',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
-                                  Text('456 759',
+                                  Text('02 349',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 25)),
                                 ],
@@ -157,7 +157,7 @@ class _AgeGroupScreenState
                                   Text('30-60',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
-                                  Text('255 259',
+                                  Text('09 756',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 25)),
                                 ],
@@ -176,7 +176,7 @@ class _AgeGroupScreenState
                                   Text('60 above',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
-                                  Text('456 759',
+                                  Text('18 754',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 25)),
                                 ],
