@@ -15,8 +15,10 @@ class _AgeGroupScreenState
     extends State<AgeGroupScreen> {
   final AssetImage logoImage =
   const AssetImage('assets/images/shield_logo.png');
-  final AssetImage male = const AssetImage('assets/images/male.png');
-  final AssetImage female = const AssetImage('assets/images/female.jpeg');
+  final AssetImage male = const AssetImage('assets/images/woman.jpg');
+  final AssetImage female = const AssetImage('assets/images/child.jpg');
+  final AssetImage adults = const AssetImage('assets/images/male04.png');
+  final AssetImage older = const AssetImage('assets/images/olderman02.jpg');
 
   final List<ChartData> chartData = [
     ChartData('David', 25, Color.fromRGBO(92, 2, 187, 1.0)),
@@ -106,7 +108,7 @@ class _AgeGroupScreenState
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text('Female',
+                                  Text('Below 12',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
                                   Text('255 259',
@@ -125,7 +127,7 @@ class _AgeGroupScreenState
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text('Male',
+                                  Text('12-30',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
                                   Text('456 759',
@@ -145,14 +147,14 @@ class _AgeGroupScreenState
                         children: [
                           Row(
                             children: [
-                              Image(image: female, width: 50,height: 50,),
+                              Image(image: adults, width: 50,height: 50,),
                               SizedBox(
                                 width: 5,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text('Female',
+                                  Text('30-60',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
                                   Text('255 259',
@@ -164,14 +166,14 @@ class _AgeGroupScreenState
                           ),
                           Row(
                             children: [
-                              Image(image: male,width: 50,height: 50,),
+                              Image(image: older,width: 50,height: 50,),
                               SizedBox(
                                 width: 5,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text('Male',
+                                  Text('60 above',
                                       style:
                                       TextStyle(color: Colors.black, fontSize: 18)),
                                   Text('456 759',
@@ -234,7 +236,7 @@ class _AgeGroupScreenState
                         ),
                         Align(
                           alignment: Alignment.bottomLeft,
-                          child: Text('62%',
+                          child: Text(' 60 above\n 62%',
                               style:
                               TextStyle(color: Colors.white, fontSize: 22)),
                         ),
