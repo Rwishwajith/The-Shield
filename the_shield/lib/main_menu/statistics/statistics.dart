@@ -3,6 +3,8 @@ import 'package:the_shield/main_menu/statistics/side_effect.dart';
 import 'package:the_shield/main_menu/statistics/vaccine_type.dart';
 
 import '../vaccine_compatibility.dart';
+import 'age_group.dart';
+import 'gender.dart';
 
 class StatisticsScreen extends StatefulWidget {
   const StatisticsScreen({Key? key}) : super(key: key);
@@ -95,6 +97,20 @@ class _StatisticsScreenState
                               context,
                               MaterialPageRoute(
                                 builder: (context) => VaccineTypeScreen(),
+                              ),
+                            );
+                          } else if(sideEffectList[index]['title'] == 'GENDER') {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => GenderScreen(),
+                              ),
+                            );
+                          } else if(sideEffectList[index]['title'] == 'AGE') {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => AgeGroupScreen(),
                               ),
                             );
                           }
