@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_shield/main_menu/remedies/aggregating_factors.dart';
 import 'package:the_shield/main_menu/remedies/factor_affection.dart';
+import 'package:the_shield/main_menu/remedies/identifyFactors.dart';
 import 'package:the_shield/main_menu/remedies/simple_home_remedies.dart';
 import 'package:the_shield/main_menu/side_effect_monitoring/log_side_effects.dart';
 import 'package:the_shield/main_menu/side_effect_monitoring/side_effect_history.dart';
@@ -128,7 +129,7 @@ class _GetHelpScreenState
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => FactorAffectionScreen(),
+                              builder: (context) => IdentifyFactorsScreen(),
                             ),
                           );
                           } else if(sideEffectList[index]['title'] == 'AGGREGATING FACTORS') {

@@ -4,6 +4,7 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:the_shield/home_screen.dart';
 import 'package:the_shield/main_menu/utility/utils.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'medical_assistance/medical_assistance.dart';
 
@@ -1215,6 +1216,20 @@ class _SideEffectPrecautionsScreenState
     bool feverSelected = false;
     bool backSelected = true;
 
+    final Uri _url = Uri.parse('https://www.who.int/');
+    Future<void>? _launched;
+
+    Future<void> _launchInWebViewOrVC(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.inAppWebView,
+        webViewConfiguration: const WebViewConfiguration(
+            headers: <String, String>{'my_header_key': 'my_header_value'}),
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+
     return Scaffold(
       backgroundColor: Color(0xffcbc5f9),
       appBar: AppBar(
@@ -1555,17 +1570,24 @@ class _SideEffectPrecautionsScreenState
                         ),
                       ],
                     ),
-                    Container(
-                      margin: const EdgeInsets.only(
-                          bottom: 5.0, left: 5.0, right: 5.0, top: 15.0),
-                      padding: const EdgeInsets.all(10.0),
-                      decoration: BoxDecoration(
-                          color: Colors.purple,
-                          border: Border.all(color: Colors.purple),
-                          borderRadius: BorderRadius.all(Radius.circular(20))),
-                      child: Text(
-                        'Go to WHO website to see more precautions',
-                        style: TextStyle(color: Colors.white, fontSize: 14),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _launched = _launchInWebViewOrVC(_url);
+                        });
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(
+                            bottom: 5.0, left: 5.0, right: 5.0, top: 15.0),
+                        padding: const EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                            color: Colors.purple,
+                            border: Border.all(color: Colors.purple),
+                            borderRadius: BorderRadius.all(Radius.circular(20))),
+                        child: Text(
+                          'Go to WHO website to see more precautions',
+                          style: TextStyle(color: Colors.white, fontSize: 14),
+                        ),
                       ),
                     ),
                     SizedBox(
