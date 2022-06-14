@@ -14,7 +14,7 @@ class GenderScreen extends StatefulWidget {
 class _GenderScreenState
     extends State<GenderScreen> {
   final AssetImage logoImage = const AssetImage('assets/images/shield_logo.png');
-  final AssetImage male = const AssetImage('assets/images/male.png');
+  final AssetImage male = const AssetImage('assets/images/male04.png');
   final AssetImage female = const AssetImage('assets/images/female.jpeg');
 
   final List<ChartData> chartData = [
@@ -52,9 +52,12 @@ class _GenderScreenState
               ),
             ),
           ),
-          title: Image(image: logoImage, width: 50, height: 50),
+          title: Padding(
+            padding: const EdgeInsets.only(left: 90.0),
+            child: Image(image: logoImage, width: 50, height: 50),
+          ),
           flexibleSpace: Padding(
-            padding: const EdgeInsets.only(top: 130.0, left: 20.0),
+            padding: const EdgeInsets.only(top: 160.0, left: 20.0),
             child: Container(
               height: 50,
               child: Text(
