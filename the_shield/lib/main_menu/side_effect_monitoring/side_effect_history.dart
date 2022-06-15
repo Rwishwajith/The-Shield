@@ -337,7 +337,7 @@ class _SideEffectHistoryScreenState extends State<SideEffectHistoryScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'Feaver',
+                              'Fever',
                               style:
                               TextStyle(color: Colors.white, fontSize: 15),
                             ),
@@ -501,11 +501,11 @@ class _SecondSideEffectHistoryScreenState
   ];
 
   final List<ChartDataBar> chartDataBar = [
-    ChartDataBar(2010, 35),
-    ChartDataBar(2011, 28),
-    ChartDataBar(2012, 34),
-    ChartDataBar(2013, 32),
-    ChartDataBar(2014, 40)
+    ChartDataBar(01, 04),
+    ChartDataBar(02, 02),
+    ChartDataBar(03, 07),
+    ChartDataBar(04, 04),
+    ChartDataBar(05, 06)
   ];
 
   @override
@@ -697,7 +697,7 @@ class _SecondSideEffectHistoryScreenState
                                   TextStyle(color: Colors.white, fontSize: 18)),
                             ],
                           ),
-                          Text('2 H',
+                          Text('5 H',
                               style:
                               TextStyle(color: Colors.white, fontSize: 15)),
                         ],
@@ -722,7 +722,7 @@ class _SecondSideEffectHistoryScreenState
                                   TextStyle(color: Colors.white, fontSize: 18)),
                             ],
                           ),
-                          Text('2 H',
+                          Text('12 H',
                               style:
                               TextStyle(color: Colors.white, fontSize: 15)),
                         ],
@@ -736,7 +736,7 @@ class _SecondSideEffectHistoryScreenState
                           Row(
                             children: [
                               CircleAvatar(
-                                backgroundColor: Colors.yellow,
+                                backgroundColor: Colors.pink,
                                 radius: 8,
                               ),
                               SizedBox(
@@ -747,7 +747,7 @@ class _SecondSideEffectHistoryScreenState
                                   TextStyle(color: Colors.white, fontSize: 18)),
                             ],
                           ),
-                          Text('2 H',
+                          Text('12 H',
                               style:
                               TextStyle(color: Colors.white, fontSize: 15)),
                         ],

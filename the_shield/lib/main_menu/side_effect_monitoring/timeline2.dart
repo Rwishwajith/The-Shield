@@ -16,19 +16,19 @@ class _SecondSideEffectTimelineScreenState
 
 
   final List<ChartData> chartData1 = [
-    ChartData(2010, 35),
-    ChartData(2011, 28),
-    ChartData(2012, 34),
-    ChartData(2013, 32),
-    ChartData(2014, 40)
+    ChartData(02, 61),
+    ChartData(03, 98),
+    ChartData(04, 88),
+    ChartData(05, 102),
+    ChartData(06, 140)
   ];
 
   final List<ChartData> chartData2 = [
-    ChartData(2010, 35),
-    ChartData(2011, 28),
-    ChartData(2012, 34),
-    ChartData(2013, 32),
-    ChartData(2014, 40)
+    ChartData(02, 76),
+    ChartData(03, 66),
+    ChartData(04, 76),
+    ChartData(05, 43),
+    ChartData(06, 78)
   ];
 
 
@@ -86,7 +86,7 @@ class _SecondSideEffectTimelineScreenState
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        '61',
+                        '110',
                         style: TextStyle(color: Colors.black, fontSize: 25),
                       ),
                       Text(
@@ -99,7 +99,7 @@ class _SecondSideEffectTimelineScreenState
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: Text(
-                    'May 2021 - May 2022',
+                    'FEB 2022 - JUN 2022',
                     style: TextStyle(color: Colors.black, fontSize: 15),
                   ),
                 ),
@@ -174,7 +174,7 @@ class _SecondSideEffectTimelineScreenState
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: Text(
-                    'Rest Heart Rate Average',
+                    'Rest Heart Rate Average Last Year',
                     style: TextStyle(color: Colors.blue, fontSize: 15),
                   ),
                 ),
@@ -197,7 +197,7 @@ class _SecondSideEffectTimelineScreenState
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: Text(
-                    'May 2021 - May 2022',
+                    'FEB 2021 - JUN 2021',
                     style: TextStyle(color: Colors.black, fontSize: 15),
                   ),
                 ),
@@ -219,7 +219,7 @@ class _SecondSideEffectTimelineScreenState
                         series: <ChartSeries>[
                           // Renders line chart
                           LineSeries<ChartData, int>(
-                              dataSource: chartData1,
+                              dataSource: chartData2,
                               xValueMapper: (ChartData data, _) => data.x,
                               yValueMapper: (ChartData data, _) => data.y
                           )

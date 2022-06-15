@@ -25,10 +25,10 @@ class _SideEffectTimelineScreenState
   ];
 
   final List<ChartDataLine> chartDataLine = [
-    ChartDataLine('2010', 10, 40, 45, 50),
-    ChartDataLine('2011', 10, 20, 45, 50),
-    ChartDataLine('2012', 10, 40, 45, 50),
-    ChartDataLine('2013', 10, 40, 45, 50),
+    ChartDataLine('Morning', 10, 40, 45, 50),
+    ChartDataLine('Noon', 10, 20, 45, 50),
+    ChartDataLine('Evening', 10, 40, 45, 50),
+    ChartDataLine('Night', 10, 40, 45, 50),
   ];
 
 

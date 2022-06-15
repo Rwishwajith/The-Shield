@@ -26,7 +26,7 @@ class _LogSideEffectsScreenState extends State<LogSideEffectsScreen> {
     'Headache',
     'Fever',
     'Joint Pain',
-    'High Blood Pressure',
+    'Blood Pressure',
     'High Sugar',
     'Heart Attack',
   ];
