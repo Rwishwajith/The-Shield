@@ -222,7 +222,7 @@ class _AgeGroupScreenState
                               dataLabelMapper: (ChartData data, _) => data.x,
                               dataLabelSettings: DataLabelSettings(
                                 // Renders the data label
-                                  isVisible: false
+                                  isVisible: true
                               ),
                               // Radius of doughnut
                               innerRadius: '60%',
