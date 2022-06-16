@@ -25,10 +25,9 @@ class _GenderScreenState
   ];
 
   final List<ChartDataLine> chartDataLine = [
-    ChartDataLine('2010', 10, 40, 45, 50),
-    ChartDataLine('2011', 10, 20, 45, 50),
-    ChartDataLine('2012', 10, 40, 45, 50),
-    ChartDataLine('2013', 10, 40, 45, 50),
+    ChartDataLine('Vaccination Date', 10, 20, 0, 0),
+    ChartDataLine('Today', 40, 70, 0, 0),
+
   ];
 
 

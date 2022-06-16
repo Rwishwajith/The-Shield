@@ -28,10 +28,10 @@ class _AgeGroupScreenState
   ];
 
   final List<ChartDataLine> chartDataLine = [
-    ChartDataLine('below 12', 10, 40, 45, 50),
-    ChartDataLine('12-30', 10, 20, 45, 50),
-    ChartDataLine('30-60', 10, 40, 45, 50),
-    ChartDataLine('above 60', 10, 40, 45, 50),
+    ChartDataLine('below 12', 2, 10, 45, 80),
+    ChartDataLine('12-30', 2, 20, 25, 50),
+    ChartDataLine('30-60', 1, 23, 55, 70),
+    ChartDataLine('above 60', 0, 10, 40, 88),
   ];
 
   final List<ChartDataBar> chartDataBar = [
@@ -236,7 +236,7 @@ class _AgeGroupScreenState
                         ),
                         Align(
                           alignment: Alignment.bottomLeft,
-                          child: Text(' 60 above\n 62%',
+                          child: Text(' 62%',
                               style:
                               TextStyle(color: Colors.white, fontSize: 22)),
                         ),
