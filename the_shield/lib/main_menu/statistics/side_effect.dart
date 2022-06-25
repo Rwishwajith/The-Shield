@@ -19,10 +19,11 @@ class _StatisticsSideEffectScreenState
 
 
   final List<ChartDataLine> chartDataLine = [
-    ChartDataLine('2010', 10, 40, 45, 50),
-    ChartDataLine('2011', 10, 20, 45, 50),
-    ChartDataLine('2012', 10, 40, 45, 50),
-    ChartDataLine('2013', 10, 40, 45, 50),
+    ChartDataLine('Headache', 1, 4, 4, 5),
+    ChartDataLine('Fever', 1, 2, 5, 0),
+    ChartDataLine('Joint Pain', 1, 4, 4, 0),
+    ChartDataLine('Cholestrol', 1, 3, 4, 2),
+
   ];
 
   final List<ChartData> chartData = [
